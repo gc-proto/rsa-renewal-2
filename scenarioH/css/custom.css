@@ -315,6 +315,7 @@ background-color: #F8F8F8;
 
 .recalls-filter-1 {
 	display: inline-block;
+	margin-top: 5px;
 	background-color: #495f07;
 	border-radius:0.25em;
 	/*var-2*/
@@ -324,6 +325,7 @@ background-color: #F8F8F8;
 
 .recalls-filter-2 {
 	display: inline-block;
+	margin-top: 5px;
 	border-radius:0.25em;
 	background-color: #3a6263;
 	/*var-2*/
@@ -333,6 +335,7 @@ background-color: #F8F8F8;
 
 .recalls-filter-3 {
 	display: inline-block;
+	margin-top: 5px;
 	border-radius:0.25em;
 	background-color: #843028;
 	/*var-2*/
@@ -342,6 +345,7 @@ background-color: #F8F8F8;
 
 .recalls-filter-4 {
 	display: inline-block;
+	margin-top: 5px;
 	border-radius:0.25em;
 	background-color: #6e3a74;
 	/*var-2*/
@@ -358,6 +362,7 @@ background-color: #F8F8F8;
 
 .recalls-filter-1-var-2 {
 	display: inline-block;
+	margin-top: 5px;
 	border-radius:0.15em;
 	background-color: #8db12175;
 	border-bottom: 4px #495f07 solid;
@@ -365,6 +370,7 @@ background-color: #F8F8F8;
 
 .recalls-filter-2-var-2 {
 	display: inline-block;
+	margin-top: 5px;
 	border-radius:0.15em;
 	background-color: #76a9ab66;
 	border-bottom: 4px #3a6263 solid;
@@ -372,6 +378,7 @@ background-color: #F8F8F8;
 
 .recalls-filter-3-var-2 {
 	display: inline-block;
+	margin-top: 5px;
 	border-radius:0.15em;
 	background-color: #ec796e6e;
 	border-bottom: 4px #843028 solid;
@@ -379,6 +386,7 @@ background-color: #F8F8F8;
 
 .recalls-filter-4-var-2 {
 	display: inline-block;
+	margin-top: 5px;
 	border-radius:0.15em;
 	background-color: #eb88f775;
 	border-bottom: 4px #6e3a74 solid;
