@@ -107,6 +107,10 @@
 <h2>Affected products</h2>
 <p>Check your product description or other identifiers (model #, UPC, SKU, etc.) to see if it's affected by this recall. If your product does not have an identifying number, check the picture to see if it matches.</p>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+<script src="../GCWeb/js/dataTables.js"></script>
+<script src="../GCWeb/js/pageLoadMore.js"></script>
+
 <style>
 .dt-more-container {
    text-align:center;
@@ -130,34 +134,7 @@
    <button id="btn-example-load-more" style="display:none">Load More</button>
 </div>
 
-<script src="../GCWeb/js/dataTables.js"></script>
-<script src="../GCWeb/js/pageLoadMore.js"></script>
-
-         <script>
-          //    $(document).ready(function (){
-          //    var table = $('#myTable').dataTable({
-          //       dom: 'frt',
-          //       ajax: 'https://gc-proto.github.io/rsa-renewal-2/GCWeb/js/load-more-recalls.json',
-          //       drawCallback: function(){
-          //          // If there is some more data
-          //          if($('#btn-example-load-more').is(':visible')){
-          //             // Scroll to the "Load more" button
-          //             $('html, body').animate({
-          //                scrollTop: $('#btn-example-load-more').offset().top
-          //             }, 1000);
-          //          }
-          //
-          //          // Show or hide "Load more" button based on whether there is more data available
-          //          $('#btn-example-load-more').toggle(this.api().page.hasMore());
-          //       }
-          //    });
-          //
-          //    // Handle click on "Load more" button
-          //    $('#btn-example-load-more').on('click', function(){
-          //       // Load more data
-          //       table.page.loadMore();
-          //    });
-          // });
+<script>
    $(document).ready(function (){
    var table = $('#example').DataTable({
       dom: 'frt',
@@ -182,7 +159,7 @@
       table.page.loadMore();
    });
 });
-          </script>
+</script>
 
 
 <h2>Issue</h2>
@@ -396,7 +373,7 @@
   </div>
   </footer>
   <!--[if gte IE 9 | !IE ]><!-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+
   <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
   <!--<![endif]-->
   <!--[if lt IE 9]>
