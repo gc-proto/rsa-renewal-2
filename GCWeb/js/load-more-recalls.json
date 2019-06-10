@@ -1,7 +1,7 @@
 {
     "data": [
-        ["<img src=\"https://hc-sc.github.io/rsa-renewal/examples/images/rsa-content-page-template-master-chef-lighters_clip_image002.jpg\"/>, "4 in 1 Charger", "Importer: Longtech Computer Distribution, Markham, Ontario", "Retailer: CDC Computers, Winnipeg, Manitoba", "Number of units: 53"],
+        ["https://hc-sc.github.io/rsa-renewal/examples/images/rsa-content-page-template-master-chef-lighters_clip_image002.jpg", "4 in 1 Charger", "Importer: Longtech Computer Distribution, Markham, Ontario", "Retailer: CDC Computers, Winnipeg, Manitoba", "Number of units: 53"],
 
-        ["<img src=\"https://hc-sc.github.io/rsa-renewal/examples/images/rsa-content-page-template-master-chef-lighters_clip_image005.jpg\"/>", "Desktop Charger 6-ports", "Importer: ComGears Canada, Markham, Ontario", "Retailer: CDC Computers, Winnipeg, Manitoba", "Number of units: 100"]
+        ["https://hc-sc.github.io/rsa-renewal/examples/images/rsa-content-page-template-master-chef-lighters_clip_image005.jpg", "Desktop Charger 6-ports", "Importer: ComGears Canada, Markham, Ontario", "Retailer: CDC Computers, Winnipeg, Manitoba", "Number of units: 100"]
     ]
 }
