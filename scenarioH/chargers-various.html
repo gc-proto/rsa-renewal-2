@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="../GCWeb/css/theme.css">
 <link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="../GCWeb/css/dataTables.css">
-
+<link rel="stylesheet" href="https://hc-sc.github.io/rsa-renewal/scenarioH/css/test-tables-alain.css" />
 
 <!--<![endif]-->
 <!--[if lt IE 9]>
@@ -117,12 +117,33 @@
    margin:2em 0;
 }
 </style>
-<table id="example" class="display" cellspacing="0" width="100%">
+<!--
+<table id="myTable">
     <thead>
+       <tr class="d2">
+         <th scope="col">Product</th>
+         <th scope="col">Strength</th>
+         <th scope="col">DIN</th>
+         <th scope="col">Dosage form</th>
+         <th scope="col">Expected shortage date</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr class="d1">
+         <td data-label="Product">EpiPen</td>
+         <td data-label="Strength">0.3 mg</td>
+         <td data-label="DIN">00509558</td>
+         <td data-label="Dosage form">Solution</td>
+         <td data-label="Expected shortage date">April 13, 2018</td>
+       </tr>
+-->
+
+
+<table id="recalls-with-images" class="display" cellspacing="0" width="100%">
+    <thead class="hidden">
         <tr>
-            <th>Image</th>
-            <th>Name</th>
-            <th>Details</th>
+            <th class="col-sm-3">Image</th>
+            <th class="col-sm-9">Name</th>
         </tr>
     </thead>
 </table>
@@ -133,8 +154,11 @@
 
 <script>
    $(document).ready(function (){
-   var table = $('#example').DataTable({
-      dom: 'frt',
+   // $.noConflict();
+   var table = $('#recalls-with-images').DataTable({
+      searching: false,
+      dom: '',
+      ordering: false,
       ajax: 'http://test.canada.ca/rsa-renewal-2/GCWeb/js/load-more-recalls.json',
       drawCallback: function(){
          // If there is some more data
