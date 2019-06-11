@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="../GCWeb/css/theme.css">
 <link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="../GCWeb/css/dataTables.css">
-<link rel="stylesheet" href="../GCWeb/css/test-tables-alain.css" />
+<!-- <link rel="stylesheet" href="../GCWeb/css/test-tables-alain.css" /> -->
 
 <!--<![endif]-->
 <!--[if lt IE 9]>
@@ -104,7 +104,7 @@
 	<li><strong>Issue:</strong> Risk of electric shock and fire</li>
 	<li><strong>What to do:</strong> Stop using the products and return them to the store where you bought them, or dispose of them</li>
 </ul>
-<h2>Affected products</h2>
+<h2 id="affected">Affected products</h2>
 <p>Check your product description or other identifiers (model #, UPC, SKU, etc.) to see if it's affected by this recall. If your product does not have an identifying number, check the picture to see if it matches.</p>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
@@ -148,16 +148,19 @@
     </thead>
 </table>
 
+<p style="float:right;"><a href="#affected">^ back to top</a></p>
+
 <div class="dt-more-container">
-   <button id="btn-load-more-recalls" class="btn btn-default">Load More</button>
+   <button id="btn-load-more-recalls" class="btn btn-default">Show next 5 results</button>
 </div>
+
 
 <script>
    $(document).ready(function (){
    // $.noConflict();
    var table = $('#recalls-with-images').DataTable({
       searching: false,
-      dom: '',
+      dom: 't<"bottom"i>',
       ordering: false,
       ajax: 'http://test.canada.ca/rsa-renewal-2/GCWeb/js/load-more-recalls.json',
       drawCallback: function(){
